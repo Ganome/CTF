@@ -1,0 +1,15 @@
+bandit3@bandit:~$ ls -alh
+total 24K
+drwxr-xr-x  3 root root 4.0K May  7  2020 .
+drwxr-xr-x 41 root root 4.0K May  7  2020 ..
+-rw-r--r--  1 root root  220 May 15  2017 .bash_logout
+-rw-r--r--  1 root root 3.5K May 15  2017 .bashrc
+drwxr-xr-x  2 root root 4.0K May  7  2020 inhere
+-rw-r--r--  1 root root  675 May 15  2017 .profile
+bandit3@bandit:~$ ls -alh inhere/
+total 12K
+drwxr-xr-x 2 root    root    4.0K May  7  2020 .
+drwxr-xr-x 3 root    root    4.0K May  7  2020 ..
+-rw-r----- 1 bandit4 bandit3   33 May  7  2020 .hidden
+bandit3@bandit:~$ cat ./inhere/.hidden
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
