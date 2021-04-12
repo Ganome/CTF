@@ -1,0 +1,4 @@
+bandit12@bandit:/tmp/ganome$ cat data8.tar
+The password is 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+Start out by using "xxd -r FILENAME > /tmp/USERNAME/bandit13.orig"  Then a bunch of renaming files using the "mv" command and finding out what type of compression was used with the "file" command.

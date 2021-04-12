@@ -1,0 +1,12 @@
+This exercise requres two active SSH connections
+
+FIRST TERMINAL
+bandit20@bandit:~$ cat /etc/bandit_pass/bandit20 | nc -lp 25000
+gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+
+SECOND TERMINAL
+bandit20@bandit:~$ ./suconnect 25000
+Read: GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+Password matches, sending next password
+
+#The password for bandit21 is the gE269... line

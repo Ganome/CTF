@@ -1,0 +1,74 @@
+bandit15@bandit:~$echo "BfMYroe26WYalil77FoDi9qh59eK5xNr" | openssl s_client -connect localhost:30001 -ign_eof
+CONNECTED(00000003)
+depth=0 CN = localhost
+verify error:num=18:self signed certificate
+verify return:1
+depth=0 CN = localhost
+verify return:1
+---
+Certificate chain
+ 0 s:/CN=localhost
+   i:/CN=localhost
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIICBjCCAW+gAwIBAgIEc/JorzANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDDAls
+b2NhbGhvc3QwHhcNMjEwMzI2MTExNzE2WhcNMjIwMzI2MTExNzE2WjAUMRIwEAYD
+VQQDDAlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAL4S7GJ6
+MMKd9sGjXvizaYVKxlXF2yR6rEfo2lm4WLI/oJqAl2ZImgrFR0tCATWRgSjSuGTf
+bQRLLxzMYXtGNUOnU3cYncuJYwXFUCCTD7FcqTjS3y7x/YXcLAnZQPL42SEJDTQ5
+3AYXMEcP2rzv7z2H6qMZXsVJEUq6FFAzS4GPAgMBAAGjZTBjMBQGA1UdEQQNMAuC
+CWxvY2FsaG9zdDBLBglghkgBhvhCAQ0EPhY8QXV0b21hdGljYWxseSBnZW5lcmF0
+ZWQgYnkgTmNhdC4gU2VlIGh0dHBzOi8vbm1hcC5vcmcvbmNhdC8uMA0GCSqGSIb3
+DQEBBQUAA4GBAAhub5wBj/cjV07NGPA02dntrDCCt8De4jXMRM+Ww8UtBu03yQEt
+FQuzp2BkeuYkXWbLjVTJ1OY2h13y3eMpEp5wwEgdxWg11z0AyQYwzXqzxmB96mBr
+fYEzN8S83bvty7M6ig4psS1FtWe0XQmR27Zet1ExzZ/AuNagbJjpqBQq
+-----END CERTIFICATE-----
+subject=/CN=localhost
+issuer=/CN=localhost
+---
+No client certificate CA names sent
+Peer signing digest: SHA512
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 1019 bytes and written 269 bytes
+Verification error: self signed certificate
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+Server public key is 1024 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
+    Session-ID: 989CC3FEE56674E5B26A61AE965C6AA6A116F8BAD2BED2E3A023DFFE58996409
+    Session-ID-ctx:
+    Master-Key: D59247EBA332060263E9629573A45D7EC3F60880902B9CC52C74155C56BACDAFB2AAFA2CB3F684381E07F422C1E3D6BE
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - 1f 3a 31 dc eb 5d f2 89-9c 01 f2 14 3c 29 8d d7   .:1..]......<)..
+    0010 - 84 b6 d0 d3 22 10 ea 5d-a7 2e 65 68 e1 73 67 53   ...."..]..eh.sgS
+    0020 - 4f 73 45 4e c9 8e ef f4-ef 86 7e e4 ca 7f 53 6a   OsEN......~...Sj
+    0030 - 48 a5 bf 27 62 e8 db 01-8d 16 3d 7b 11 e3 6b 85   H..'b.....={..k.
+    0040 - eb e6 e0 e2 88 92 23 ef-09 e3 38 8d c0 58 27 b5   ......#...8..X'.
+    0050 - 4e 47 9d 30 45 fa 4f 62-df ce 64 11 c5 7d 02 76   NG.0E.Ob..d..}.v
+    0060 - f6 b8 1b 1e fd 19 2e 99-65 ba 4c b9 c0 08 38 30   ........e.L...80
+    0070 - ab c9 16 de 4c 95 6e e5-5c e5 90 0c e0 42 db 43   ....L.n.\....B.C
+    0080 - e2 f9 e0 e7 f5 dd 96 86-2d c9 32 cc 27 2b f0 aa   ........-.2.'+..
+    0090 - 13 bf 22 35 41 d0 1f 61-67 b3 c2 01 02 40 f0 ef   .."5A..ag....@..
+
+    Start Time: 1618253774
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self signed certificate)
+    Extended master secret: yes
+---
+Correct!
+cluFn7wTiGryunymYOu4RcffSxQluehd
+
+
+This one uses the openssl client function of the command to form a SSL connection.  We first pipe in the key using the echo command.

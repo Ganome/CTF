@@ -1,0 +1,6 @@
+bandit13@bandit:~$ ssh -i sshkey.private bandit14@localhost
+
+This command will tell ssh to use the stored SSH key in the bandit13 home directory to login to the localhost, or loopback, Same machine.
+
+bandit14@bandit:~$ cat /etc/bandit_pass/bandit14
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e

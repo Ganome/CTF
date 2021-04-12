@@ -1,0 +1,101 @@
+bandit16@bandit:~$ echo "cluFn7wTiGryunymYOu4RcffSxQluehd" | openssl s_client -connect localhost:31790 -ign_eof
+CONNECTED(00000003)
+depth=0 CN = localhost
+verify error:num=18:self signed certificate
+verify return:1
+depth=0 CN = localhost
+verify return:1
+---
+Certificate chain
+ 0 s:/CN=localhost
+   i:/CN=localhost
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIICBjCCAW+gAwIBAgIECDnzqDANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDDAls
+b2NhbGhvc3QwHhcNMjEwMzI2MTExODAxWhcNMjIwMzI2MTExODAxWjAUMRIwEAYD
+VQQDDAlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANRUNDIN
+ZBq8iASw1lNp1j4aa1cX9QQ5C548ErPrQBJudU9035NKdpaj4AIhW8ksT09xLp1g
+98chwOaoLKeFIOPZtTFKLEBlPGqWSPvYszOd1eXIbRy4akKeamSbs1H9KDheBjsh
+5bgAOtxvaUbHLkhoVnZBAwSNguhL3mQFgrUpAgMBAAGjZTBjMBQGA1UdEQQNMAuC
+CWxvY2FsaG9zdDBLBglghkgBhvhCAQ0EPhY8QXV0b21hdGljYWxseSBnZW5lcmF0
+ZWQgYnkgTmNhdC4gU2VlIGh0dHBzOi8vbm1hcC5vcmcvbmNhdC8uMA0GCSqGSIb3
+DQEBBQUAA4GBAJ+BiQT5Y+JcWJoG770E/2mfiVdOcadbFYmjvTXFORv95eyn8tBu
+9WhjvbxCJOyHvwekS1OyOWI8wXg8GDJL2Y2BLuX5kOnBjXV1l//M1zwP4mMWcKF2
++GqH+v7pYU0Se1vlsY5AG/br2W7iliGPSRpvIzAeJrtt5ihNoXZpWEqO
+-----END CERTIFICATE-----
+subject=/CN=localhost
+issuer=/CN=localhost
+---
+No client certificate CA names sent
+Peer signing digest: SHA512
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 1019 bytes and written 269 bytes
+Verification error: self signed certificate
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+Server public key is 1024 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
+    Session-ID: 5BF3F2D7481E236305DC26EE973E84715559FF4440276C2E8481C20094C40981
+    Session-ID-ctx:
+    Master-Key: 9DFBC54D7508E96CCD36FC48F6622F080958A6FECACD74EAF1B8C12F218B324BDBDE7D3170940F8009261992D6D0D411
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - cf 15 b7 20 63 d7 15 c5-69 2e ec c0 69 f2 81 03   ... c...i...i...
+    0010 - 47 6d 16 32 fe 12 31 7d-ea f0 20 d5 6e d0 34 1f   Gm.2..1}.. .n.4.
+    0020 - d0 48 a7 38 2b cb 24 91-3e 6c 17 16 c9 ae c6 08   .H.8+.$.>l......
+    0030 - a8 76 79 82 13 ee 40 1d-39 c5 b9 3f 62 d7 8c 20   .vy...@.9..?b..
+    0040 - 79 b8 6e 44 16 68 7e 90-a5 20 24 12 1a a8 48 cf   y.nD.h~.. $...H.
+    0050 - 8c af ac 5f fb 01 1a 29-0d f5 e0 9a 89 a7 65 4f   ..._...)......eO
+    0060 - 20 21 0e f3 83 26 be be-b3 54 25 9f 07 7f 66 be    !...&...T%...f.
+    0070 - db 12 64 83 04 0a 57 0c-52 da ee 2a e1 cf 49 77   ..d...W.R..*..Iw
+    0080 - 8c 0e 71 24 b7 a3 07 d4-c8 6e 6b b5 07 5b f1 c9   ..q$.....nk..[..
+    0090 - 8c 00 e3 83 1c bb 49 de-3e 80 2e a5 2f 7f 74 49   ......I.>.../.tI
+
+    Start Time: 1618254314
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self signed certificate)
+    Extended master secret: yes
+---
+Correct!
+-----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEAvmOkuifmMg6HL2YPIOjon6iWfbp7c3jx34YkYWqUH57SUdyJ
+imZzeyGC0gtZPGujUSxiJSWI/oTqexh+cAMTSMlOJf7+BrJObArnxd9Y7YT2bRPQ
+Ja6Lzb558YW3FZl87ORiO+rW4LCDCNd2lUvLE/GL2GWyuKN0K5iCd5TbtJzEkQTu
+DSt2mcNn4rhAL+JFr56o4T6z8WWAW18BR6yGrMq7Q/kALHYW3OekePQAzL0VUYbW
+JGTi65CxbCnzc/w4+mqQyvmzpWtMAzJTzAzQxNbkR2MBGySxDLrjg0LWN6sK7wNX
+x0YVztz/zbIkPjfkU1jHS+9EbVNj+D1XFOJuaQIDAQABAoIBABagpxpM1aoLWfvD
+KHcj10nqcoBc4oE11aFYQwik7xfW+24pRNuDE6SFthOar69jp5RlLwD1NhPx3iBl
+J9nOM8OJ0VToum43UOS8YxF8WwhXriYGnc1sskbwpXOUDc9uX4+UESzH22P29ovd
+d8WErY0gPxun8pbJLmxkAtWNhpMvfe0050vk9TL5wqbu9AlbssgTcCXkMQnPw9nC
+YNN6DDP2lbcBrvgT9YCNL6C+ZKufD52yOQ9qOkwFTEQpjtF4uNtJom+asvlpmS8A
+vLY9r60wYSvmZhNqBUrj7lyCtXMIu1kkd4w7F77k+DjHoAXyxcUp1DGL51sOmama
++TOWWgECgYEA8JtPxP0GRJ+IQkX262jM3dEIkza8ky5moIwUqYdsx0NxHgRRhORT
+8c8hAuRBb2G82so8vUHk/fur85OEfc9TncnCY2crpoqsghifKLxrLgtT+qDpfZnx
+SatLdt8GfQ85yA7hnWWJ2MxF3NaeSDm75Lsm+tBbAiyc9P2jGRNtMSkCgYEAypHd
+HCctNi/FwjulhttFx/rHYKhLidZDFYeiE/v45bN4yFm8x7R/b0iE7KaszX+Exdvt
+SghaTdcG0Knyw1bpJVyusavPzpaJMjdJ6tcFhVAbAjm7enCIvGCSx+X3l5SiWg0A
+R57hJglezIiVjv3aGwHwvlZvtszK6zV6oXFAu0ECgYAbjo46T4hyP5tJi93V5HDi
+Ttiek7xRVxUl+iU7rWkGAXFpMLFteQEsRr7PJ/lemmEY5eTDAFMLy9FL2m9oQWCg
+R8VdwSk8r9FGLS+9aKcV5PI/WEKlwgXinB3OhYimtiG2Cg5JCqIZFHxD6MjEGOiu
+L8ktHMPvodBwNsSBULpG0QKBgBAplTfC1HOnWiMGOU3KPwYWt0O6CdTkmJOmL8Ni
+blh9elyZ9FsGxsgtRBXRsqXuz7wtsQAgLHxbdLq/ZJQ7YfzOKU4ZxEnabvXnvWkU
+YOdjHdSOoKvDQNWu6ucyLRAWFuISeXw9a/9p7ftpxm0TSgyvmfLF2MIAEwyzRqaM
+77pBAoGAMmjmIJdjp+Ez8duyn3ieo36yrttF5NSsJLAbxFpdlc1gvtGCWW+9Cq0b
+dxviW8+TFVEBl1O4f7HVm6EpTscdDxU+bCXWkfjuRb7Dy9GOtt9JPsX8MBTakzh3
+vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
+-----END RSA PRIVATE KEY-----
+
+closed
+
+This level requires you to copy the SSH key shown above to your local machine, and then tell SSH to use that keyfile.
