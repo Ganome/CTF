@@ -1,0 +1,7 @@
+5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
+
+Resize your window to SUPER small, and force the showtext script to enter the "more" part of the more command.  from here you can enter Vim with the "v" letter.
+Then :e /etc/bandit_pass/bandit26 - This will let you edit the bandit26 password, and view it.  after that we use
+:set shell /bin/bash
+:shell
+to achieve a shell as bandit26

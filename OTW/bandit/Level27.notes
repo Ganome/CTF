@@ -1,0 +1,4 @@
+bandit26@bandit:~$ ./bandit27-do cat /etc/bandit_pass/bandit27
+3ba3118a22e93127a4ed485be72ef5ea
+
+Level 27 is found from within the shell of bandit26.   There is a suid binary, that allows you to cat the password for bandit27, as the bandit27 user.
