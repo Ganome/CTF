@@ -24,9 +24,9 @@ drwxr-xr-x 3 root       root       4.0K Aug 26  2019 ..
 
 
 leviathan4@leviathan:~$ ./.trash/bin
+
 01010100 01101001 01110100 01101000 00110100 01100011 01101111 01101011 01100101 01101001 00001010
 
-leviathan4@leviathan:~$
 
 
 After logging in and looking at the home folders, I found a .trash which seemed out of place.  I ran the bin file inside of it and it spit out some binary.  I used cyberchef to convert this binary into ascii and we have leviathan5 password
