@@ -1,0 +1,2 @@
+leviathan0@leviathan:~$ grep levia ./.backup/bookmarks.html
+<DT><A HREF="http://leviathan.labs.overthewire.org/passwordus.html | This will be fixed later, the password for leviathan1 is rioGegei8m" ADD_DATE="1155384634" LAST_CHARSET="ISO-8859-1" ID="rdf:#$2wIU71">password to leviathan1</A>
