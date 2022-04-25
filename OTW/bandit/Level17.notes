@@ -1,3 +1,18 @@
+bandit16@bandit:~$ nmap -sV localhost -p 31000-32000
+
+Starting Nmap 7.40 ( https://nmap.org ) at 2022-04-25 19:59 CEST
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00030s latency).
+Not shown: 996 closed ports
+PORT      STATE SERVICE     VERSION
+31046/tcp open  echo
+31518/tcp open  ssl/echo
+31691/tcp open  echo
+31790/tcp open  ssl/unknown
+31960/tcp open  echo
+
+####FROM here we can see that port 31790 is NOT an echo and is unknown service that uses SSL, lets try that!
+
 bandit16@bandit:~$ echo "cluFn7wTiGryunymYOu4RcffSxQluehd" | openssl s_client -connect localhost:31790 -ign_eof
 CONNECTED(00000003)
 depth=0 CN = localhost

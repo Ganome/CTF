@@ -1,0 +1,20 @@
+This SSH connection is not an interactive shell - you might think you've done something wrong.  You haven't!
+after an "ls" command we see one file - README.txt
+
+
+ganome@~/Projects/CTF/OTW/bandit>ssh -p2220 bandit33@bandit.labs.overthewire.org /bin/bash
+This is a OverTheWire game server. More information on http://www.overthewire.org/wargames
+
+bandit33@bandit.labs.overthewire.org's password:
+cat README.txt
+Congratulations on solving the last level of this game!
+
+At this moment, there are no more levels to play in this game. However, we are constantly working
+on new levels and will most likely expand this game with more levels soon.
+Keep an eye out for an announcement on our usual communication channels!
+In the meantime, you could play some of our other wargames.
+
+If you have an idea for an awesome new level, please let us know!
+
+
+COMPLETE!!!  Congrats!!!

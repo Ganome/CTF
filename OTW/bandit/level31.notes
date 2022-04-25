@@ -1,0 +1,10 @@
+After creating a temp directory in /tmp/bandit30 , we can navigate to that folder and clone our repository
+
+git clone bandit30-git@localhost:/home/bandit30-git/repo
+
+After looking at the README.md and the "git log" there is no evidence of a password.  Git has tagging features as well.  Lets check the tags
+
+bandit30@bandit:/tmp/bandit30/repo$ git tag
+secret
+bandit13@bandit:/tmp/bandit30/repo$ git show secret
+47e603bb428404d265f59c42920d81e5

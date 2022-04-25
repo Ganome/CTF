@@ -1,0 +1,25 @@
+After cloning this repo, the README.md has some instructions to push a new file into the repository.
+
+bandit31@bandit:/tmp/bandit31/repo$ echo "May I come in?" > key.txt
+
+When trying to use the git add key.txt - Git reports that we ignore .txt files.
+
+so we edit the ./.gitignore file and comment out the "*.txt" line. Now we can "git add key.txt" && "git commit -am "get the key" && "git push"
+When we do, we receive this output - 
+
+
+bandit31-git@localhost's password:
+Counting objects: 4, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 337 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+remote: ### Attempting to validate files... ####
+remote:
+remote: .oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.
+remote:
+remote: Well done! Here is the password for the next level:
+remote: 56a9bf19c63d650ce78e6ec0354ee45e
+remote:
+remote: .oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.oOo.
+remote:

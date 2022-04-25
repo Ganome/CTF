@@ -1,0 +1,6 @@
+This .bashrc starts us out in a shell that converts all STDIN to uppercase text.
+Since it is an interactive shell, we can use the bash variable "$0" to execute a new shell
+Once we escape the uppercase shell we can run a "/bin/bash -i" to get back into an interactive shell where TAB-Completion works and were not stuck in uppercase.
+
+bandit33@bandit:~$ cat /etc/bandit_pass/bandit33
+c9c3199ddf4121b10cf581a98d51caee
